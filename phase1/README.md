@@ -1,34 +1,38 @@
-# Phase 1 dmcBase
+# Phase 1 *dmcBase*
 
 ## Overview
 
-### Intents:
-* [ ] EmotionIntent  
 
-## Handlers
+## Code Base
+
+### Intents:
+* [ ] CaptureEmotionIntent
+
+### Handlers:
 * [ ] EmotionHandler 
 * [ ] ProfileHandler 
 * [ ] ConversationHandler *maintain a conversation regardless of background processes*
 
-## Modules
-* RecentContextModule:  
+### Modules:
+* RecentContextModule  
 *Pick up on what you are saying and maintain recent memories*  
-* HistoricalDataModule:  
+* HistoricalDataModule  
 *Save information about user mood, personal situation and traumas/thoughts*  
-* SentimentModule:  
-*Off-the-shelf approaches to gauge sentiment real-time. Good safety net to feed any out-of-bounds ideas into the system.*  
 
 ## Future Builds:
 
-* Sentiment analyser based on first few minutes of talking -> via BERT or basic sentiment
+* SentimentModule  
+*Off-the-shelf approaches to gauge sentiment real-time via BERT or basic sentiment. Good safety net to feed any out-of-bounds ideas into the system.* 
 
-# Build Questions (Put in Phase Development Documentation)
+## Build Questions
 
-## Emotion Intent
-* Emotion per slot on a single intent vs Emotion per Intent
+### Capture Emotion Intent
+* Emotion Values in single slot vs Emotion per slot on a single intent vs Emotion per intent  
+..._First has issue with capturing words, it goes too deep in granularity! Similar with second as it becomes janky to locate every buzz word. Third is longest but best way to deal with system._  
+
 * Valid replies?
 
-## Profile Intent
+### Profile Intent
 * User Data:
   - Mandatory: Name
   - Optional: DoB/Age, Occupation, Gender
