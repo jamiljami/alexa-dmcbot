@@ -2,7 +2,13 @@
 An iterative chatbot assistant to aid users with pent up emotions and other problems. Built as a Voice User Interface (VUI) on the Alexa platform. 
 
 # Overview
-A real-time conversation handler and a background character and decision analyst. Keep talking and it will handle your conversation with personalised memory and useful insights and actions. It's a friend, it will not therapise or give you any of that CBT stuff! 
+A real-time conversation handler and a background character and decision analyst. Keep talking and it will handle your conversation with personalised memory and useful insights and actions. It's a friend, it will not therapise or give you any of that CBT stuff!  
+  
+Core concepts:
+* Handling conversations well
+* Knowing the sentiment behind your words
+* Saving relevant information
+* Finding ways to assist problem
 
 ## Example Flow
 * Startup Mode - Launch Handler  
@@ -27,8 +33,8 @@ Triggers only somewhat into the conversation
 
 # Phases
 
-* Phase 1 Alexa-Flow:  
-* Phase 2
-* Phase 3  
+* Phase 1 *dmc-bot*  
+* Phase 2 *sentiment-bot*
+* Phase 3 *LM-BERT-bot*
   
 **Current Build: Phase 1**
