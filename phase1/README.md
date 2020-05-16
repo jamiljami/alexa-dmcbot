@@ -2,7 +2,19 @@
 
 ## Overview
 
-We build out a prototype with basic functionality:
+We build out a prototype in layers:  
+
+* Layer 1 Basic Conversation  
+  * Launch known vs unknown and ask for key user information ("hi there, first time? Tell me your name" or "hi there, is this [User]?")
+  * Initiate questioning ("How are you doing?")
+    * Ask for user sentiment _good, neutral, bad_ (
+    * Narrow down user mood (anger/panic/fatigue/etc, triggerable outright)
+  * 
+  
+_put negated moods as slots_  
+
+* Layer 2
+
 * Emotion Capturer Capture umbrella emotion classes -> handle response
 * Launch for when user known vs unknown
 
