@@ -1,10 +1,14 @@
-# Phase 1 *dmcBase*
+# Phase 1 *dmc-base*
 
 ## Overview
 
 We build out a prototype in stages:
 
-* Stage 1 Basic Conversation  
+Modes are listed as [Mode Name] (Alexa Prompt) (User Prompt/Case)
+The user prompts can be activated in an overriding manner and with user navigation.
+Augmented modes dependent on overall sentiment, plus doesn't understand sarcasm.
+
+* Stage 1 Basic Conversation
   * Launch known vs unknown and ask for key user information ("hi there, first time? Tell me your name" or "hi there, is this [User]?")
   * Initiate sentiment mode ("Hey! How are you doing?")
     * Case for general sentiment _good, neutral, bad_ (ask to narrow down further)
@@ -14,21 +18,31 @@ We build out a prototype in stages:
     * Case for confirming, start recording user response and playback to user (so just so I get this right, this is happened?)
     * Case for no confirmation ("Ah dang sorry sometimes my systems are off. Can you repeat or rephrase that part for me?")
     * Case for yes confirmation ("Keep going", "I'm listening", "I'm here, keep going")
-    * Case for done confirmation ("Okay I see, want my opinion on it?" move onto relief mode)
-  * Initiate relief mode
-    * 
-    * Case for "help me" (Hey I'm just a robot but I'm becoming more real as the days go by. 
+    * Case for done confirmation (move onto relief mode)
+  * Initiate relief mode ("I know I'm just a robot but want to know what I think?") 
+    * Booster
+      * Tell them that given the stacked odds, even if they don't think so highly of themselves, they have been doing what they can while struggling with real issues. You may not think you're strong enough or good enough but you are much more than you realise, even if people don't give you credit for that.
+      * No matter what anyone else says, they can go screw themselves! They don't know the real you and when I listen to you, what I hear is someone who may not fully know themselves but is on their way to finding out.
+      * And yes the situation looks pretty fucked and hey let's accept it and do something fun!
+    * Interjections
+      * Irrelevant: Memes / funny stuff / interesting stuff
+      * Relevant: resonant stories / calming audio
+      * Case for preferences 
+    * Case for immediate help  
   * Initiate solution mode
-  
   * Initiate react mode ("You just want a fight right?")
     * Case for swearing
     * Case for cusses
+  * Initiate navigation mode ("Was there something specific you wanted me to do? Like listen or provide relief? Or boot up solutions?")
     
   * Background processes
+    * Continuously save text and analyse sentiment
+    * Database of possible replies
+    * Save preferences
 _put negated moods as slots_  
 
 * Stage 2
-
+  * Could make relief mode the main mode with historical knowledge, able to go to listen mode or solutions mode.
 
 
 ## Code Base (UPDATE)
