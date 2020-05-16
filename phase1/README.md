@@ -2,6 +2,10 @@
 
 ## Overview
 
+We build out a prototype with basic functionality:
+* Emotion Capturer Capture umbrella emotion classes -> handle response
+* Launch for when user known vs unknown
+
 
 ## Code Base
 
