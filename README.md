@@ -3,8 +3,8 @@
 An iterative chatbot assistant to aid users with pent up emotions and other problems. Built as a Voice User Interface (VUI) on the Alexa platform.
 
 ## Current Build:
-[ ] Emotion Intent
-[ ] Profile Intent
+* [ ] Emotion Intent
+* [ ] Profile Intent
 
 ## Future Builds:
 
@@ -19,7 +19,7 @@ An iterative chatbot assistant to aid users with pent up emotions and other prob
 
 ## Profile Intent
 * User Data: 
-  *Name, DoB/Age, , Gender, 
+... * Name, DoB/Age, , Gender, 
 * 
 
 
